@@ -1,12 +1,17 @@
+import {useNavigate} from "react-router-dom";
 const Navbar = () => {
+
+  const navigate = useNavigate();
+
+
   return ( 
       <div className="navbar">
           <div className="navLeft">
-              <h4>React Movie App</h4>
+              <h4 onClick={() => navigate('/')} >React Movie App</h4>
           </div>
           <div className="navRight">
-              <button className="btn" >Login</button>
-              <button className="btn" >Register</button>
+              <button className="btn" onClick={() => navigate('login')} >Login</button>
+              <button className="btn" onClick={() => navigate('register')}  >Register</button>
           </div>
       </div>
    );

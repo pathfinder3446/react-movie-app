@@ -8,15 +8,35 @@
 // firebase
 
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from 'axios';
 
 const Main = () => {
 
   const [movieData, setMovieData] = useState([]);
 
+  const urlData = `https://api.themoviedb.org/3/discover/movie?api_key=e0f6ffb03a4f78f1783ac00f73df6b95`;
+
+  const getMovieData = async () => {
+    try {
+      const response = await axios.get(urlData);
+       setMovieData(response.data.results);
+       console.log(movieData)
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  useEffect(() => {
+    getMovieData()
+  }, [])
 
 
-  return <div>Main</div>;
+  return (
+  <div className="main" >
+    <button type="submit" onClick={() => getMovieData()} >Submit</button>
+  </div>
+  )
 };
 
 export default Main;

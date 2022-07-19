@@ -5,13 +5,13 @@ const Navbar = () => {
 
 
   return ( 
-      <div className="navbar">
+      <div className="navbar text-white bg-dark">
           <div className="navLeft">
               <h4 onClick={() => navigate('/')} >React Movie App</h4>
           </div>
-          <div className="navRight">
-              <button className="btn" onClick={() => navigate('login')} >Login</button>
-              <button className="btn" onClick={() => navigate('register')}  >Register</button>
+          <div className="navRight ">
+              <button className="btn rounded bg-primary text-white" onClick={() => navigate('login')} >Login</button>
+              <button className="btn border solid rounded bg-light text-dark" onClick={() => navigate('register')}  >Register</button>
           </div>
       </div>
    );

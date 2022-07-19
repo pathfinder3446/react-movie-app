@@ -10,6 +10,7 @@
 
 import { useState, useEffect } from "react";
 import axios from 'axios';
+import MovieCard from "../components/MovieCard";
 
 const Main = () => {
 
@@ -34,7 +35,21 @@ const Main = () => {
 
   return (
   <div className="main" >
-    <button type="submit" onClick={() => getMovieData()} >Submit</button>
+    <nav class="navbar navbar-light bg-light justify-content-center">
+  <form class="form-inline d-flex">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onClick={() => getMovieData()}>Search</button>
+  </form>
+</nav>
+    <div className="d-flex flex-wrap gap-2 justify-content-center">
+       {movieData?.map((movie, index) => {
+      return (
+        <MovieCard {...movie} key={index} />
+      )
+    })}
+    </div>
+   
+    
   </div>
   )
 };

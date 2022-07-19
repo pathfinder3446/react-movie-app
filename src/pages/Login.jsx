@@ -10,11 +10,12 @@ import {
 
 const Login = () => {
   return (
-    <div className="login m-4  ">
-      <div className="loginImg d-flex justify-content-center" >
-        <img src={"https://picsum.photos/1100/550"} alt="" />
+    <div className="login m-4 p-4 row ">
+      <div className="loginImg d-flex justify-content-center col-sm " >
+        <img className="border rounded" src={"https://picsum.photos/900/450"} alt="" />
       </div>
-        <h1 className="text-6xl text-center" >Login</h1>
+      <div className="loginForm col-sm m-4">
+      <h1 className="text-6xl text-center" >Login</h1>
       <FormGroup className="flex flex-col gap-4">
         <FormControl>
           <InputLabel htmlFor="mail">Email address</InputLabel>
@@ -42,6 +43,8 @@ const Login = () => {
           Continue with Google
         </Button>
       </FormGroup>
+      </div>
+      
     </div>
   );
 };

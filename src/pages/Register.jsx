@@ -10,11 +10,12 @@ import {
 
 const Register = () => {
   return (
-    <div className="login m-4  ">
-      <div className="loginImg d-flex justify-content-center" >
-        <img src={"https://picsum.photos/1100/550"} alt="" />
+    <div className="register m-4 p-4 row ">
+      <div className="loginImg d-flex justify-content-center col-sm" >
+        <img src={"https://picsum.photos/900/450"} alt="" />
       </div>
-        <h1 className="text-6xl text-center" >Register</h1>
+      <div className="registerForm col-sm m-4">
+      <h1 className="text-6xl text-center" >Register</h1>
       <FormGroup className="flex flex-col gap-4">
       <FormControl>
           <InputLabel htmlFor="first-name">First Name</InputLabel>
@@ -64,6 +65,8 @@ const Register = () => {
           Continue with Google
         </Button>
       </FormGroup>
+      </div>
+        
     </div>
   );
 };

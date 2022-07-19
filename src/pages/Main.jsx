@@ -38,7 +38,7 @@ const Main = () => {
     <nav class="navbar navbar-light bg-light justify-content-center">
   <form class="form-inline d-flex">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onClick={() => getMovieData()}>Search</button>
+    <button class="btn btn-outline-success my-2 my-sm-0" style={{ marginLeft: "1rem" }} type="submit" onClick={() => getMovieData()}>Search</button>
   </form>
 </nav>
     <div className="d-flex flex-wrap gap-2 justify-content-center">

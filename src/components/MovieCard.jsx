@@ -4,7 +4,7 @@ const MovieCard = (movieData) => {
   const {poster_path, title, overview} = movieData;
 
   return (
-    <div className="card-container row">
+    <div className="card-container row d-flex flex-wrap">
       <div className="col">
         <div className="card" style={{ width: "16rem" }}>
         <img src={`https://image.tmdb.org/t/p/w1280${poster_path}`} alt="image" />

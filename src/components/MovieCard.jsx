@@ -20,7 +20,7 @@ const MovieCard = (movieData) => {
         </div>
         <div className="bg-primary" style={{ width: "16rem" }}>
           <h3 className="card-title text-center text-light ">{title}</h3>
-          {/* <p className="overview card-text text-hover" style={{ display:"none"}}>{overview}</p> */}
+          <p className="overview card-text text-hover" style={{ display:"none"}}>{overview}</p>
         </div>
       </div>
       

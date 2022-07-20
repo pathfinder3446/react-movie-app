@@ -14,7 +14,7 @@ const MovieDetail = () => {
         <img src={`https://image.tmdb.org/t/p/w1280${state.poster_path}`} alt="image" />
         </div>
         <div className="bg-primary col">
-          <h3 className="card-title text-center text-light ">{state.title}</h3>
+          <h3 className="card-title text-center text-light "style={{height:"3rem"}} >{state.title}</h3>
           <p className="overview card-text text-hover">{state.overview}</p>
         </div>
   </div>

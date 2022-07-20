@@ -2,7 +2,7 @@ import { borderRadius, display, padding } from "@mui/system";
 import { Navigate } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 
-const MovieCard = (movieData) => {
+const SearchCard = (movieData) => {
 
   const navigate = useNavigate();
 
@@ -28,4 +28,4 @@ const MovieCard = (movieData) => {
   ) 
 };
 
-export default MovieCard;
+export default SearchCard;
